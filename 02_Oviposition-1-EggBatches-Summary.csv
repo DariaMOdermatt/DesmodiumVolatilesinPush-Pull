@@ -1,0 +1,576 @@
+﻿Start Date,Person,Cage,Treatment,Position,Moths alive,Moths dead,EggBatches,Comment,Included or Excluded
+5/19/2023,DMO,A1,M-AD,On Maize plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,DMO,A1,M-AD,Close to Maize plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,DMO,A1,M-AD,No Decision,2,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,DMO,A1,M-AD,Close to Des plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,DMO,A1,M-AD,On Des plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,DMO,A2,M-AD,On Maize plant,0,0,9,5 Egg batches on the maize plant & 1 egg batch close to maize were already harvested on 21.05.2023,Included
+5/19/2023,DMO,A2,M-AD,Close to Maize plant,0,0,1,5 Egg batches on the maize plant & 1 egg batch close to maize were already harvested on 21.05.2023,Included
+5/19/2023,DMO,A2,M-AD,No Decision,4,0,0,5 Egg batches on the maize plant & 1 egg batch close to maize were already harvested on 21.05.2023,Included
+5/19/2023,DMO,A2,M-AD,Close to Des plant,0,0,0,5 Egg batches on the maize plant & 1 egg batch close to maize were already harvested on 21.05.2023,Included
+5/19/2023,DMO,A2,M-AD,On Des plant,0,0,0,5 Egg batches on the maize plant & 1 egg batch close to maize were already harvested on 21.05.2023,Included
+5/19/2023,DMO,B1,M-M(GL),On Maize plant,0,0,6,3 Egg batches on the maize plant were already harvested on 21.05.2023,Included
+5/19/2023,DMO,B1,M-M(GL),Close to Maize plant,0,0,0,3 Egg batches on the maize plant were already harvested on 21.05.2023,Included
+5/19/2023,DMO,B1,M-M(GL),No Decision,1,0,0,3 Egg batches on the maize plant were already harvested on 21.05.2023,Included
+5/19/2023,DMO,B1,M-M(GL),Close to Des plant,1,0,0,3 Egg batches on the maize plant were already harvested on 21.05.2023,Included
+5/19/2023,DMO,B1,M-M(GL),On Des plant,2,0,8,3 Egg batches on the maize plant were already harvested on 21.05.2023,Included
+5/19/2023,NO,B2,M-M(GL),On Maize plant,2,0,2,The Batch on the Desmodium treatment (maize plant) was furthest away from the Desmodium plant. This egg batch was already harvested on the 21.05.2023,Included
+5/19/2023,NO,B2,M-M(GL),Close to Maize plant,1,0,0,The Batch on the Desmodium treatment (maize plant) was furthest away from the Desmodium plant. This egg batch was already harvested on the 21.05.2023,Included
+5/19/2023,NO,B2,M-M(GL),No Decision,1,0,2,The Batch on the Desmodium treatment (maize plant) was furthest away from the Desmodium plant. This egg batch was already harvested on the 21.05.2023,Included
+5/19/2023,NO,B2,M-M(GL),Close to Des plant,0,0,0,The Batch on the Desmodium treatment (maize plant) was furthest away from the Desmodium plant. This egg batch was already harvested on the 21.05.2023,Included
+5/19/2023,NO,B2,M-M(GL),On Des plant,0,0,1,The Batch on the Desmodium treatment (maize plant) was furthest away from the Desmodium plant. This egg batch was already harvested on the 21.05.2023,Included
+5/19/2023,MM,C1,Control,On Left plant,0,0,7,1 Egg batch on the door frame was removed already on the 21.05.2023,Included
+5/19/2023,MM,C1,Control,Close to Left plant,0,1,0,1 Egg batch on the door frame was removed already on the 21.05.2023,Included
+5/19/2023,MM,C1,Control,No Decision,2,0,4,1 Egg batch on the door frame was removed already on the 21.05.2023,Included
+5/19/2023,MM,C1,Control,Close to Right plant,0,0,0,1 Egg batch on the door frame was removed already on the 21.05.2023,Included
+5/19/2023,MM,C1,Control,On Right plant,1,0,8,1 Egg batch on the door frame was removed already on the 21.05.2023,Included
+5/19/2023,NO,C2,Control,On Left plant,1,0,3,1 egg batch on the right maize plant & 8 egg batches on the right side were already collected on 21.05.2023. Batches on the right side were rather small in size.,Included
+5/19/2023,NO,C2,Control,Close to Left plant,0,0,0,1 egg batch on the right maize plant & 8 egg batches on the right side were already collected on 21.05.2023. Batches on the right side were rather small in size.,Included
+5/19/2023,NO,C2,Control,No Decision,0,0,0,1 egg batch on the right maize plant & 8 egg batches on the right side were already collected on 21.05.2023. Batches on the right side were rather small in size.,Included
+5/19/2023,NO,C2,Control,Close to Right plant,0,0,0,1 egg batch on the right maize plant & 8 egg batches on the right side were already collected on 21.05.2023. Batches on the right side were rather small in size.,Included
+5/19/2023,NO,C2,Control,On Right plant,1,0,16,1 egg batch on the right maize plant & 8 egg batches on the right side were already collected on 21.05.2023. Batches on the right side were rather small in size.,Included
+5/19/2023,CO,D1,M-GL,On Maize plant,1,0,11,1 Egg batch on the maize treatment & 3 egg batches on the desmodium treatment were removed already on 21.05.2023,Included
+5/19/2023,CO,D1,M-GL,Close to Maize plant,0,1,1,1 Egg batch on the maize treatment & 3 egg batches on the desmodium treatment were removed already on 21.05.2023,Included
+5/19/2023,CO,D1,M-GL,No Decision,1,0,1,1 Egg batch on the maize treatment & 3 egg batches on the desmodium treatment were removed already on 21.05.2023,Included
+5/19/2023,CO,D1,M-GL,Close to Des plant,2,0,2,1 Egg batch on the maize treatment & 3 egg batches on the desmodium treatment were removed already on 21.05.2023,Included
+5/19/2023,CO,D1,M-GL,On Des plant,1,0,3,1 Egg batch on the maize treatment & 3 egg batches on the desmodium treatment were removed already on 21.05.2023,Included
+5/19/2023,CO,D2,M-GL,On Maize plant,1,0,0,No Oviposition,Excluded
+5/19/2023,CO,D2,M-GL,Close to Maize plant,0,0,0,No Oviposition,Excluded
+5/19/2023,CO,D2,M-GL,No Decision,0,0,0,No Oviposition,Excluded
+5/19/2023,CO,D2,M-GL,Close to Des plant,1,0,0,No Oviposition,Excluded
+5/19/2023,CO,D2,M-GL,On Des plant,1,0,0,No Oviposition,Excluded
+5/19/2023,MM,E1,M-M(AD),On Maize plant,0,0,0,"No Oviposition, All moths were still in the tube",Excluded
+5/19/2023,MM,E1,M-M(AD),Close to Maize plant,0,0,0,"No Oviposition, All moths were still in the tube",Excluded
+5/19/2023,MM,E1,M-M(AD),No Decision,0,0,0,"No Oviposition, All moths were still in the tube",Excluded
+5/19/2023,MM,E1,M-M(AD),Close to Des plant,2,0,0,"No Oviposition, All moths were still in the tube",Excluded
+5/19/2023,MM,E1,M-M(AD),On Des plant,0,0,0,"No Oviposition, All moths were still in the tube",Excluded
+5/19/2023,MM,E2,M-M(AD),On Maize plant,0,0,7,-,Included
+5/19/2023,MM,E2,M-M(AD),Close to Maize plant,0,0,0,-,Included
+5/19/2023,MM,E2,M-M(AD),No Decision,0,0,0,-,Included
+5/19/2023,MM,E2,M-M(AD),Close to Des plant,1,0,0,-,Included
+5/19/2023,MM,E2,M-M(AD),On Des plant,0,0,3,-,Included
+5/19/2023,CO,F1,Control,On Left plant,1,0,5,-,Included
+5/19/2023,CO,F1,Control,Close to Left plant,0,0,2,-,Included
+5/19/2023,CO,F1,Control,No Decision,0,0,2,-,Included
+5/19/2023,CO,F1,Control,Close to Right plant,1,0,0,-,Included
+5/19/2023,CO,F1,Control,On Right plant,1,1,4,-,Included
+5/19/2023,NO,F2,Control,On Left plant,0,0,12,One of the moths escaped on 21.05.2023. One of the egg batches on the Desmodium treatment of 21.05.2023 couldn't be found. This could be due to forgetting to mark it.,Included
+5/19/2023,NO,F2,Control,Close to Left plant,0,0,0,One of the moths escaped on 21.05.2023. One of the egg batches on the Desmodium treatment of 21.05.2023 couldn't be found. This could be due to forgetting to mark it.,Included
+5/19/2023,NO,F2,Control,No Decision,3,0,1,One of the moths escaped on 21.05.2023. One of the egg batches on the Desmodium treatment of 21.05.2023 couldn't be found. This could be due to forgetting to mark it.,Included
+5/19/2023,NO,F2,Control,Close to Right plant,0,0,0,One of the moths escaped on 21.05.2023. One of the egg batches on the Desmodium treatment of 21.05.2023 couldn't be found. This could be due to forgetting to mark it.,Included
+5/19/2023,NO,F2,Control,On Right plant,1,0,5,One of the moths escaped on 21.05.2023. One of the egg batches on the Desmodium treatment of 21.05.2023 couldn't be found. This could be due to forgetting to mark it.,Included
+5/19/2023,MM,F3,Control,On Left plant,1,1,5,-,Included
+5/19/2023,MM,F3,Control,Close to Left plant,1,0,0,-,Included
+5/19/2023,MM,F3,Control,No Decision,0,0,0,-,Included
+5/19/2023,MM,F3,Control,Close to Right plant,0,0,0,-,Included
+5/19/2023,MM,F3,Control,On Right plant,0,0,4,-,Included
+5/19/2023,CO,G1,M-GL,On Maize plant,2,0,10,-,Included
+5/19/2023,CO,G1,M-GL,Close to Maize plant,0,1,6,-,Included
+5/19/2023,CO,G1,M-GL,No Decision,0,0,0,-,Included
+5/19/2023,CO,G1,M-GL,Close to Des plant,0,0,0,-,Included
+5/19/2023,CO,G1,M-GL,On Des plant,1,1,3,-,Included
+5/19/2023,Unknown,G2,M-GL,On Maize plant,1,0,7,-,Included
+5/19/2023,Unknown,G2,M-GL,Close to Maize plant,0,0,1,-,Included
+5/19/2023,Unknown,G2,M-GL,No Decision,2,0,1,-,Included
+5/19/2023,Unknown,G2,M-GL,Close to Des plant,0,0,0,-,Included
+5/19/2023,Unknown,G2,M-GL,On Des plant,0,0,1,-,Included
+5/19/2023,CO,G3,M-GL,On Maize plant,0,0,9,Two moths died during mating,Included
+5/19/2023,CO,G3,M-GL,Close to Maize plant,1,0,0,Two moths died during mating,Included
+5/19/2023,CO,G3,M-GL,No Decision,0,0,0,Two moths died during mating,Included
+5/19/2023,CO,G3,M-GL,Close to Des plant,1,2,0,Two moths died during mating,Included
+5/19/2023,CO,G3,M-GL,On Des plant,1,0,1,Two moths died during mating,Included
+5/19/2023,Unknown,H1,M-M(GL),On Maize plant,1,0,1,-,Included
+5/19/2023,Unknown,H1,M-M(GL),Close to Maize plant,2,0,0,-,Included
+5/19/2023,Unknown,H1,M-M(GL),No Decision,0,0,0,-,Included
+5/19/2023,Unknown,H1,M-M(GL),Close to Des plant,0,0,0,-,Included
+5/19/2023,Unknown,H1,M-M(GL),On Des plant,0,0,2,-,Included
+5/19/2023,CO?,H2,M-M(GL),On Maize plant,1,0,1,1 egg batch on the door close to the desmodium plant was already collected on the 21.05.2023,Included
+5/19/2023,CO?,H2,M-M(GL),Close to Maize plant,0,0,1,1 egg batch on the door close to the desmodium plant was already collected on the 21.05.2023,Included
+5/19/2023,CO?,H2,M-M(GL),No Decision,0,0,1,1 egg batch on the door close to the desmodium plant was already collected on the 21.05.2023,Included
+5/19/2023,CO?,H2,M-M(GL),Close to Des plant,1,0,1,1 egg batch on the door close to the desmodium plant was already collected on the 21.05.2023,Included
+5/19/2023,CO?,H2,M-M(GL),On Des plant,3,0,3,1 egg batch on the door close to the desmodium plant was already collected on the 21.05.2023,Included
+5/19/2023,CO?,H3,M-M(GL),On Maize plant,1,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,CO?,H3,M-M(GL),Close to Maize plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,CO?,H3,M-M(GL),No Decision,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,CO?,H3,M-M(GL),Close to Des plant,1,2,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,CO?,H3,M-M(GL),On Des plant,0,0,0,"No Oviposition! There were ants visible in the cage, which have probably killed the FAW moths. Pieces of Wings were visible on the floor, which indicates some moth being killed.",Excluded
+5/19/2023,MM,J1,M-AD,On Maize plant,0,0,5,-,Included
+5/19/2023,MM,J1,M-AD,Close to Maize plant,0,0,0,-,Included
+5/19/2023,MM,J1,M-AD,No Decision,0,0,1,-,Included
+5/19/2023,MM,J1,M-AD,Close to Des plant,2,0,1,-,Included
+5/19/2023,MM,J1,M-AD,On Des plant,1,0,1,-,Included
+5/19/2023,Unknown,J2,M-AD,On Maize plant,1,0,8,Maybe not all egg batches have been collected,Included
+5/19/2023,Unknown,J2,M-AD,Close to Maize plant,0,0,3,Maybe not all egg batches have been collected,Included
+5/19/2023,Unknown,J2,M-AD,No Decision,0,1,5,Maybe not all egg batches have been collected,Included
+5/19/2023,Unknown,J2,M-AD,Close to Des plant,0,0,0,Maybe not all egg batches have been collected,Included
+5/19/2023,Unknown,J2,M-AD,On Des plant,1,0,1,Maybe not all egg batches have been collected,Included
+5/19/2023,Unknown,J3,M-AD,On Maize plant,1,0,3,-,Included
+5/19/2023,Unknown,J3,M-AD,Close to Maize plant,1,0,1,-,Included
+5/19/2023,Unknown,J3,M-AD,No Decision,0,0,4,-,Included
+5/19/2023,Unknown,J3,M-AD,Close to Des plant,0,1,1,-,Included
+5/19/2023,Unknown,J3,M-AD,On Des plant,0,1,0,-,Included
+5/19/2023,DMO,K1,M-M(AD),On Maize plant,1,0,10,-,Included
+5/19/2023,DMO,K1,M-M(AD),Close to Maize plant,0,0,0,-,Included
+5/19/2023,DMO,K1,M-M(AD),No Decision,0,0,2,-,Included
+5/19/2023,DMO,K1,M-M(AD),Close to Des plant,2,0,0,-,Included
+5/19/2023,DMO,K1,M-M(AD),On Des plant,1,0,10,-,Included
+5/19/2023,DMO,K2,M-M(AD),On Maize plant,1,0,6,-,Included
+5/19/2023,DMO,K2,M-M(AD),Close to Maize plant,0,0,1,-,Included
+5/19/2023,DMO,K2,M-M(AD),No Decision,3,0,1,-,Included
+5/19/2023,DMO,K2,M-M(AD),Close to Des plant,0,0,0,-,Included
+5/19/2023,DMO,K2,M-M(AD),On Des plant,0,0,2,-,Included
+5/19/2023,DMO,K3,M-M(AD),On Maize plant,1,0,0,"On the right side (Maize treatment) there was a D.intortum standing close to the cage, which was put away on 21.05.2023",Excluded
+5/19/2023,DMO,K3,M-M(AD),Close to Maize plant,1,1,0,"On the right side (Maize treatment) there was a D.intortum standing close to the cage, which was put away on 21.05.2023",Excluded
+5/19/2023,DMO,K3,M-M(AD),No Decision,0,0,0,"On the right side (Maize treatment) there was a D.intortum standing close to the cage, which was put away on 21.05.2023",Excluded
+5/19/2023,DMO,K3,M-M(AD),Close to Des plant,2,0,0,"On the right side (Maize treatment) there was a D.intortum standing close to the cage, which was put away on 21.05.2023",Excluded
+5/19/2023,DMO,K3,M-M(AD),On Des plant,0,0,3,"On the right side (Maize treatment) there was a D.intortum standing close to the cage, which was put away on 21.05.2023",Excluded
+5/23/2023,NO,A1,Control,On Left plant,1,0,5,-,Included
+5/23/2023,NO,A1,Control,Close to Left plant,0,0,0,-,Included
+5/23/2023,NO,A1,Control,No Decision,3,0,0,-,Included
+5/23/2023,NO,A1,Control,Close to Right plant,0,0,0,-,Included
+5/23/2023,NO,A1,Control,On Right plant,0,0,2,-,Included
+5/23/2023,CO,A2,Control,On Left plant,0,0,3,-,Included
+5/23/2023,CO,A2,Control,Close to Left plant,2,0,1,-,Included
+5/23/2023,CO,A2,Control,No Decision,0,0,0,-,Included
+5/23/2023,CO,A2,Control,Close to Right plant,2,0,1,-,Included
+5/23/2023,CO,A2,Control,On Right plant,0,0,3,-,Included
+5/23/2023,DMO,B1,M-GL,On Maize plant,Missing,Missing,3,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B1,M-GL,Close to Maize plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B1,M-GL,No Decision,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B1,M-GL,Close to Des plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B1,M-GL,On Des plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B2,M-GL,On Maize plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B2,M-GL,Close to Maize plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B2,M-GL,No Decision,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B2,M-GL,Close to Des plant,Missing,Missing,6,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/23/2023,DMO,B2,M-GL,On Des plant,Missing,Missing,0,"The paper sheet of the B cages couldn't be found anymore, therefore the egg batch information was read from the photographs. The moth information is missing completely.",Included
+5/24/2023,DMO,C1,M-M(AD),On Maize plant,0,0,9,"Trial was started one day later (24. - 27.05.2023), Egg batches were mixed up during the collection",Excluded
+5/24/2023,DMO,C1,M-M(AD),Close to Maize plant,4,0,0,"Trial was started one day later (24. - 27.05.2023), Egg batches were mixed up during the collection",Excluded
+5/24/2023,DMO,C1,M-M(AD),No Decision,1,0,0,"Trial was started one day later (24. - 27.05.2023), Egg batches were mixed up during the collection",Excluded
+5/24/2023,DMO,C1,M-M(AD),Close to Des plant,0,0,0,"Trial was started one day later (24. - 27.05.2023), Egg batches were mixed up during the collection",Excluded
+5/24/2023,DMO,C1,M-M(AD),On Des plant,0,0,7,"Trial was started one day later (24. - 27.05.2023), Egg batches were mixed up during the collection",Excluded
+5/24/2023,DMO,C2,M-M(AD),On Maize plant,0,0,0,Trial was started one day later (24. - 27.05.2023),Included
+5/24/2023,DMO,C2,M-M(AD),Close to Maize plant,1,0,0,Trial was started one day later (24. - 27.05.2023),Included
+5/24/2023,DMO,C2,M-M(AD),No Decision,1,0,0,Trial was started one day later (24. - 27.05.2023),Included
+5/24/2023,DMO,C2,M-M(AD),Close to Des plant,0,0,0,Trial was started one day later (24. - 27.05.2023),Included
+5/24/2023,DMO,C2,M-M(AD),On Des plant,1,0,7,Trial was started one day later (24. - 27.05.2023),Included
+5/23/2023,CO,D1,M-M(GL),On Maize plant,1,0,2,-,Included
+5/23/2023,CO,D1,M-M(GL),Close to Maize plant,1,0,0,-,Included
+5/23/2023,CO,D1,M-M(GL),No Decision,0,0,2,-,Included
+5/23/2023,CO,D1,M-M(GL),Close to Des plant,2,0,0,-,Included
+5/23/2023,CO,D1,M-M(GL),On Des plant,0,0,0,-,Included
+5/23/2023,CO,D2,M-M(GL),On Maize plant,0,0,4,-,Included
+5/23/2023,CO,D2,M-M(GL),Close to Maize plant,2,0,1,-,Included
+5/23/2023,CO,D2,M-M(GL),No Decision,2,0,1,-,Included
+5/23/2023,CO,D2,M-M(GL),Close to Des plant,0,0,1,-,Included
+5/23/2023,CO,D2,M-M(GL),On Des plant,1,0,2,-,Included
+5/23/2023,DMO,E1,M-AD,On Maize plant,1,0,4,-,Included
+5/23/2023,DMO,E1,M-AD,Close to Maize plant,1,0,1,-,Included
+5/23/2023,DMO,E1,M-AD,No Decision,0,0,1,-,Included
+5/23/2023,DMO,E1,M-AD,Close to Des plant,0,1,0,-,Included
+5/23/2023,DMO,E1,M-AD,On Des plant,2,0,0,-,Included
+5/23/2023,DMO,E2,M-AD,On Maize plant,0,0,4,-,Included
+5/23/2023,DMO,E2,M-AD,Close to Maize plant,1,0,0,-,Included
+5/23/2023,DMO,E2,M-AD,No Decision,0,0,0,-,Included
+5/23/2023,DMO,E2,M-AD,Close to Des plant,1,0,0,-,Included
+5/23/2023,DMO,E2,M-AD,On Des plant,1,0,0,-,Included
+5/23/2023,DMO,F1,M-AD,On Maize plant,0,0,0,No Oviposition. The Desmodium plant C5 from the measurement of the potted plants was used.,Excluded
+5/23/2023,DMO,F1,M-AD,Close to Maize plant,1,0,0,No Oviposition. The Desmodium plant C5 from the measurement of the potted plants was used.,Excluded
+5/23/2023,DMO,F1,M-AD,No Decision,0,0,0,No Oviposition. The Desmodium plant C5 from the measurement of the potted plants was used.,Excluded
+5/23/2023,DMO,F1,M-AD,Close to Des plant,0,0,0,No Oviposition. The Desmodium plant C5 from the measurement of the potted plants was used.,Excluded
+5/23/2023,DMO,F1,M-AD,On Des plant,4,0,0,No Oviposition. The Desmodium plant C5 from the measurement of the potted plants was used.,Excluded
+5/23/2023,DMO,F2,M-AD,On Maize plant,0,0,1,All moths were dead on the third day. The Desmodium plant C1 from the measurement of the potted plants was used.,Included
+5/23/2023,DMO,F2,M-AD,Close to Maize plant,0,2,0,All moths were dead on the third day. The Desmodium plant C1 from the measurement of the potted plants was used.,Included
+5/23/2023,DMO,F2,M-AD,No Decision,0,3,1,All moths were dead on the third day. The Desmodium plant C1 from the measurement of the potted plants was used.,Included
+5/23/2023,DMO,F2,M-AD,Close to Des plant,0,0,0,All moths were dead on the third day. The Desmodium plant C1 from the measurement of the potted plants was used.,Included
+5/23/2023,DMO,F2,M-AD,On Des plant,0,0,0,All moths were dead on the third day. The Desmodium plant C1 from the measurement of the potted plants was used.,Included
+5/23/2023,DMO,F3,M-AD,On Maize plant,2,0,4,"There were wings found but no sign of ants, that are responsible of the destruction of the moth. The maize plant was slightly infested with first instar larvae. Because of the only little infection, the trial will still be included. The Desmodium plant C2 from the measurement of the potted plants was used.",Included
+5/23/2023,DMO,F3,M-AD,Close to Maize plant,1,0,0,"There were wings found but no sign of ants, that are responsible of the destruction of the moth. The maize plant was slightly infested with first instar larvae. Because of the only little infection, the trial will still be included. The Desmodium plant C2 from the measurement of the potted plants was used.",Included
+5/23/2023,DMO,F3,M-AD,No Decision,0,1,0,"There were wings found but no sign of ants, that are responsible of the destruction of the moth. The maize plant was slightly infested with first instar larvae. Because of the only little infection, the trial will still be included. The Desmodium plant C2 from the measurement of the potted plants was used.",Included
+5/23/2023,DMO,F3,M-AD,Close to Des plant,0,0,0,"There were wings found but no sign of ants, that are responsible of the destruction of the moth. The maize plant was slightly infested with first instar larvae. Because of the only little infection, the trial will still be included. The Desmodium plant C2 from the measurement of the potted plants was used.",Included
+5/23/2023,DMO,F3,M-AD,On Des plant,1,0,0,"There were wings found but no sign of ants, that are responsible of the destruction of the moth. The maize plant was slightly infested with first instar larvae. Because of the only little infection, the trial will still be included. The Desmodium plant C2 from the measurement of the potted plants was used.",Included
+5/23/2023,CO,G1,M-M(AD),On Maize plant,1,0,2,-,Included
+5/23/2023,CO,G1,M-M(AD),Close to Maize plant,1,0,0,-,Included
+5/23/2023,CO,G1,M-M(AD),No Decision,1,0,1,-,Included
+5/23/2023,CO,G1,M-M(AD),Close to Des plant,1,0,0,-,Included
+5/23/2023,CO,G1,M-M(AD),On Des plant,1,0,0,-,Included
+5/23/2023,CO,G2,M-M(AD),On Maize plant,0,0,0,Larval feeding was observed on both plants,Excluded
+5/23/2023,CO,G2,M-M(AD),Close to Maize plant,0,1,0,Larval feeding was observed on both plants,Excluded
+5/23/2023,CO,G2,M-M(AD),No Decision,1,1,0,Larval feeding was observed on both plants,Excluded
+5/23/2023,CO,G2,M-M(AD),Close to Des plant,1,0,1,Larval feeding was observed on both plants,Excluded
+5/23/2023,CO,G2,M-M(AD),On Des plant,1,0,0,Larval feeding was observed on both plants,Excluded
+5/23/2023,CO,G3,M-M(AD),On Maize plant,0,0,3,-,Included
+5/23/2023,CO,G3,M-M(AD),Close to Maize plant,0,0,0,-,Included
+5/23/2023,CO,G3,M-M(AD),No Decision,0,0,0,-,Included
+5/23/2023,CO,G3,M-M(AD),Close to Des plant,0,1,0,-,Included
+5/23/2023,CO,G3,M-M(AD),On Des plant,2,0,3,-,Included
+5/23/2023,CO,H1,M-GL,On Maize plant,1,0,12,The Desmodium plant D5 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H1,M-GL,Close to Maize plant,0,0,0,The Desmodium plant D5 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H1,M-GL,No Decision,0,0,0,The Desmodium plant D5 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H1,M-GL,Close to Des plant,0,3,0,The Desmodium plant D5 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H1,M-GL,On Des plant,1,0,0,The Desmodium plant D5 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H2,M-GL,On Maize plant,0,0,1,-,Included
+5/23/2023,CO,H2,M-GL,Close to Maize plant,1,1,0,-,Included
+5/23/2023,CO,H2,M-GL,No Decision,0,2,1,-,Included
+5/23/2023,CO,H2,M-GL,Close to Des plant,0,0,0,-,Included
+5/23/2023,CO,H2,M-GL,On Des plant,1,0,0,-,Included
+5/23/2023,CO,H3,M-GL,On Maize plant,2,0,12,The Desmodium plant D3 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H3,M-GL,Close to Maize plant,3,0,4,The Desmodium plant D3 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H3,M-GL,No Decision,0,0,3,The Desmodium plant D3 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H3,M-GL,Close to Des plant,0,0,1,The Desmodium plant D3 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,H3,M-GL,On Des plant,0,0,0,The Desmodium plant D3 from the measurement of the potted plants was used.,Included
+5/23/2023,CO,J1,Control,On Left plant,1,0,13,-,Included
+5/23/2023,CO,J1,Control,Close to Left plant,0,0,0,-,Included
+5/23/2023,CO,J1,Control,No Decision,1,0,0,-,Included
+5/23/2023,CO,J1,Control,Close to Right plant,0,0,0,-,Included
+5/23/2023,CO,J1,Control,On Right plant,1,3,0,-,Included
+5/23/2023,CO,J2,Control,On Left plant,0,0,3,-,Included
+5/23/2023,CO,J2,Control,Close to Left plant,0,1,0,-,Included
+5/23/2023,CO,J2,Control,No Decision,1,3,0,-,Included
+5/23/2023,CO,J2,Control,Close to Right plant,0,0,0,-,Included
+5/23/2023,CO,J2,Control,On Right plant,0,0,1,-,Included
+5/23/2023,CO,J3,Control,On Left plant,0,0,0,-,Included
+5/23/2023,CO,J3,Control,Close to Left plant,1,0,0,-,Included
+5/23/2023,CO,J3,Control,No Decision,0,1,0,-,Included
+5/23/2023,CO,J3,Control,Close to Right plant,0,0,0,-,Included
+5/23/2023,CO,J3,Control,On Right plant,1,0,1,-,Included
+5/23/2023,DMO,K1,M-M(GL),On Maize plant,1,0,0,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K1,M-M(GL),Close to Maize plant,0,0,0,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K1,M-M(GL),No Decision,0,2,1,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K1,M-M(GL),Close to Des plant,1,0,1,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K1,M-M(GL),On Des plant,0,0,1,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K2,M-M(GL),On Maize plant,1,0,3,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K2,M-M(GL),Close to Maize plant,0,0,0,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K2,M-M(GL),No Decision,0,0,1,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K2,M-M(GL),Close to Des plant,0,0,1,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K2,M-M(GL),On Des plant,0,0,2,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K3,M-M(GL),On Maize plant,1,0,6,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K3,M-M(GL),Close to Maize plant,0,0,0,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K3,M-M(GL),No Decision,2,1,0,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K3,M-M(GL),Close to Des plant,0,0,5,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/23/2023,DMO,K3,M-M(GL),On Des plant,0,0,12,"There were ants visible in the cage, which have most probably disturbed the FAW moths.",Included
+5/30/2023,MM?,F1,M-M(AD),On Maize plant,0,0,3,-,Included
+5/30/2023,MM?,F1,M-M(AD),Close to Maize plant,1,0,2,-,Included
+5/30/2023,MM?,F1,M-M(AD),No Decision,1,0,2,-,Included
+5/30/2023,MM?,F1,M-M(AD),Close to Des plant,0,0,3,-,Included
+5/30/2023,MM?,F1,M-M(AD),On Des plant,0,0,2,-,Included
+5/30/2023,MM?,F2,M-M(AD),On Maize plant,1,0,3,-,Included
+5/30/2023,MM?,F2,M-M(AD),Close to Maize plant,0,0,1,-,Included
+5/30/2023,MM?,F2,M-M(AD),No Decision,1,0,1,-,Included
+5/30/2023,MM?,F2,M-M(AD),Close to Des plant,0,0,0,-,Included
+5/30/2023,MM?,F2,M-M(AD),On Des plant,1,1,6,-,Included
+5/30/2023,MM?,F3,M-M(AD),On Maize plant,1,1,0,-,Included
+5/30/2023,MM?,F3,M-M(AD),Close to Maize plant,0,0,0,-,Included
+5/30/2023,MM?,F3,M-M(AD),No Decision,0,0,0,-,Included
+5/30/2023,MM?,F3,M-M(AD),Close to Des plant,0,1,1,-,Included
+5/30/2023,MM?,F3,M-M(AD),On Des plant,0,1,6,-,Included
+5/30/2023,Audrey,G1,M-M(GL),On Maize plant,0,0,8,-,Included
+5/30/2023,Audrey,G1,M-M(GL),Close to Maize plant,0,0,0,-,Included
+5/30/2023,Audrey,G1,M-M(GL),No Decision,0,1,3,-,Included
+5/30/2023,Audrey,G1,M-M(GL),Close to Des plant,1,0,0,-,Included
+5/30/2023,Audrey,G1,M-M(GL),On Des plant,1,0,2,-,Included
+5/30/2023,Audrey,G2,M-M(GL),On Maize plant,2,0,0,-,Included
+5/30/2023,Audrey,G2,M-M(GL),Close to Maize plant,0,0,0,-,Included
+5/30/2023,Audrey,G2,M-M(GL),No Decision,0,0,0,-,Included
+5/30/2023,Audrey,G2,M-M(GL),Close to Des plant,1,0,0,-,Included
+5/30/2023,Audrey,G2,M-M(GL),On Des plant,0,0,7,-,Included
+5/30/2023,Audrey,G3,M-M(GL),On Maize plant,0,0,1,-,Included
+5/30/2023,Audrey,G3,M-M(GL),Close to Maize plant,0,2,0,-,Included
+5/30/2023,Audrey,G3,M-M(GL),No Decision,0,1,6,-,Included
+5/30/2023,Audrey,G3,M-M(GL),Close to Des plant,0,2,0,-,Included
+5/30/2023,Audrey,G3,M-M(GL),On Des plant,0,0,0,-,Included
+5/30/2023,DMO,H1,Control,On Left plant,0,0,0,-,Included
+5/30/2023,DMO,H1,Control,Close to Left plant,0,3,0,-,Included
+5/30/2023,DMO,H1,Control,No Decision,0,0,0,-,Included
+5/30/2023,DMO,H1,Control,Close to Right plant,0,0,1,-,Included
+5/30/2023,DMO,H1,Control,On Right plant,0,0,3,-,Included
+5/30/2023,DMO,H2,Control,On Left plant,1,0,11,-,Included
+5/30/2023,DMO,H2,Control,Close to Left plant,2,0,1,-,Included
+5/30/2023,DMO,H2,Control,No Decision,0,0,0,-,Included
+5/30/2023,DMO,H2,Control,Close to Right plant,0,0,0,-,Included
+5/30/2023,DMO,H2,Control,On Right plant,0,0,12,-,Included
+5/30/2023,DMO,H3,Control,On Left plant,0,0,11,-,Included
+5/30/2023,DMO,H3,Control,Close to Left plant,0,0,1,-,Included
+5/30/2023,DMO,H3,Control,No Decision,0,0,5,-,Included
+5/30/2023,DMO,H3,Control,Close to Right plant,0,0,0,-,Included
+5/30/2023,DMO,H3,Control,On Right plant,0,1,3,-,Included
+5/30/2023,CO,J1,M-GL,On Maize plant,1,0,9,-,Included
+5/30/2023,CO,J1,M-GL,Close to Maize plant,2,0,4,-,Included
+5/30/2023,CO,J1,M-GL,No Decision,0,0,0,-,Included
+5/30/2023,CO,J1,M-GL,Close to Des plant,1,0,0,-,Included
+5/30/2023,CO,J1,M-GL,On Des plant,1,0,0,-,Included
+5/30/2023,CO,J2,M-GL,On Maize plant,0,0,15,-,Included
+5/30/2023,CO,J2,M-GL,Close to Maize plant,0,0,1,-,Included
+5/30/2023,CO,J2,M-GL,No Decision,0,0,0,-,Included
+5/30/2023,CO,J2,M-GL,Close to Des plant,2,0,0,-,Included
+5/30/2023,CO,J2,M-GL,On Des plant,0,0,1,-,Included
+5/30/2023,CO,J3,M-GL,On Maize plant,1,0,0,-,Included
+5/30/2023,CO,J3,M-GL,Close to Maize plant,1,0,0,-,Included
+5/30/2023,CO,J3,M-GL,No Decision,0,1,3,-,Included
+5/30/2023,CO,J3,M-GL,Close to Des plant,0,0,0,-,Included
+5/30/2023,CO,J3,M-GL,On Des plant,0,1,0,-,Included
+5/30/2023,NO,K1,M-AD,On Maize plant,1,1,0,-,Included
+5/30/2023,NO,K1,M-AD,Close to Maize plant,0,0,0,-,Included
+5/30/2023,NO,K1,M-AD,No Decision,0,0,1,-,Included
+5/30/2023,NO,K1,M-AD,Close to Des plant,1,0,0,-,Included
+5/30/2023,NO,K1,M-AD,On Des plant,1,0,0,-,Included
+5/30/2023,NO,K2,M-AD,On Maize plant,0,0,1,-,Included
+5/30/2023,NO,K2,M-AD,Close to Maize plant,0,0,0,-,Included
+5/30/2023,NO,K2,M-AD,No Decision,2,0,0,-,Included
+5/30/2023,NO,K2,M-AD,Close to Des plant,1,0,0,-,Included
+5/30/2023,NO,K2,M-AD,On Des plant,0,0,0,-,Included
+5/30/2023,NO,K3,M-AD,On Maize plant,0,0,0,-,Included
+5/30/2023,NO,K3,M-AD,Close to Maize plant,0,0,0,-,Included
+5/30/2023,NO,K3,M-AD,No Decision,0,0,3,-,Included
+5/30/2023,NO,K3,M-AD,Close to Des plant,0,0,0,-,Included
+5/30/2023,NO,K3,M-AD,On Des plant,4,0,0,-,Included
+6/4/2023,Unknown,A1,M-M(GL),On Maize plant,1,0,1,-,Included
+6/4/2023,Unknown,A1,M-M(GL),Close to Maize plant,0,0,0,-,Included
+6/4/2023,Unknown,A1,M-M(GL),No Decision,2,0,5,-,Included
+6/4/2023,Unknown,A1,M-M(GL),Close to Des plant,1,0,0,-,Included
+6/4/2023,Unknown,A1,M-M(GL),On Des plant,0,0,1,-,Included
+6/4/2023,Unknown,A2,M-M(GL),On Maize plant,0,0,4,-,Included
+6/4/2023,Unknown,A2,M-M(GL),Close to Maize plant,1,0,0,-,Included
+6/4/2023,Unknown,A2,M-M(GL),No Decision,0,0,2,-,Included
+6/4/2023,Unknown,A2,M-M(GL),Close to Des plant,1,0,0,-,Included
+6/4/2023,Unknown,A2,M-M(GL),On Des plant,2,0,2,-,Included
+6/4/2023,CO,B1,Control,On Left plant,1,0,3,-,Included
+6/4/2023,CO,B1,Control,Close to Left plant,2,1,0,-,Included
+6/4/2023,CO,B1,Control,No Decision,0,0,1,-,Included
+6/4/2023,CO,B1,Control,Close to Right plant,0,0,2,-,Included
+6/4/2023,CO,B1,Control,On Right plant,1,0,4,-,Included
+6/4/2023,CO,B2,Control,On Left plant,1,0,1,-,Included
+6/4/2023,CO,B2,Control,Close to Left plant,0,0,4,-,Included
+6/4/2023,CO,B2,Control,No Decision,1,0,2,-,Included
+6/4/2023,CO,B2,Control,Close to Right plant,2,0,1,-,Included
+6/4/2023,CO,B2,Control,On Right plant,1,0,8,-,Included
+6/4/2023,Unknown,C1,M-AD,On Maize plant,0,0,0,-,Included
+6/4/2023,Unknown,C1,M-AD,Close to Maize plant,0,0,12,-,Included
+6/4/2023,Unknown,C1,M-AD,No Decision,2,0,0,-,Included
+6/4/2023,Unknown,C1,M-AD,Close to Des plant,0,1,0,-,Included
+6/4/2023,Unknown,C1,M-AD,On Des plant,1,0,0,-,Included
+6/4/2023,Unknown,C2,M-AD,On Maize plant,0,0,7,-,Included
+6/4/2023,Unknown,C2,M-AD,Close to Maize plant,2,0,0,-,Included
+6/4/2023,Unknown,C2,M-AD,No Decision,1,0,1,-,Included
+6/4/2023,Unknown,C2,M-AD,Close to Des plant,0,0,0,-,Included
+6/4/2023,Unknown,C2,M-AD,On Des plant,2,0,2,-,Included
+6/4/2023,Unknown,D1,M-M(AD),On Maize plant,0,0,9,-,Included
+6/4/2023,Unknown,D1,M-M(AD),Close to Maize plant,1,0,0,-,Included
+6/4/2023,Unknown,D1,M-M(AD),No Decision,1,1,1,-,Included
+6/4/2023,Unknown,D1,M-M(AD),Close to Des plant,0,0,0,-,Included
+6/4/2023,Unknown,D1,M-M(AD),On Des plant,1,0,3,-,Included
+6/4/2023,Unknown,D2,M-M(AD),On Maize plant,1,0,1,-,Included
+6/4/2023,Unknown,D2,M-M(AD),Close to Maize plant,1,0,1,-,Included
+6/4/2023,Unknown,D2,M-M(AD),No Decision,2,0,3,-,Included
+6/4/2023,Unknown,D2,M-M(AD),Close to Des plant,1,0,0,-,Included
+6/4/2023,Unknown,D2,M-M(AD),On Des plant,0,0,1,-,Included
+6/4/2023,Unknown,E1,M-GL,On Maize plant,1,0,7,-,Included
+6/4/2023,Unknown,E1,M-GL,Close to Maize plant,0,1,0,-,Included
+6/4/2023,Unknown,E1,M-GL,No Decision,1,0,1,-,Included
+6/4/2023,Unknown,E1,M-GL,Close to Des plant,1,0,0,-,Included
+6/4/2023,Unknown,E1,M-GL,On Des plant,1,0,0,-,Included
+6/4/2023,Unknown,E2,M-GL,On Maize plant,1,0,2,-,Included
+6/4/2023,Unknown,E2,M-GL,Close to Maize plant,0,0,0,-,Included
+6/4/2023,Unknown,E2,M-GL,No Decision,3,3,0,-,Included
+6/4/2023,Unknown,E2,M-GL,Close to Des plant,1,0,0,-,Included
+6/4/2023,Unknown,E2,M-GL,On Des plant,0,0,0,-,Included
+6/4/2023,Unknown,F1,M-GL,On Maize plant,0,0,13,-,Included
+6/4/2023,Unknown,F1,M-GL,Close to Maize plant,0,0,8,-,Included
+6/4/2023,Unknown,F1,M-GL,No Decision,0,0,2,-,Included
+6/4/2023,Unknown,F1,M-GL,Close to Des plant,0,0,2,-,Included
+6/4/2023,Unknown,F1,M-GL,On Des plant,1,0,2,-,Included
+6/4/2023,Unknown,F2,M-GL,On Maize plant,2,0,5,-,Included
+6/4/2023,Unknown,F2,M-GL,Close to Maize plant,0,0,3,-,Included
+6/4/2023,Unknown,F2,M-GL,No Decision,0,0,1,-,Included
+6/4/2023,Unknown,F2,M-GL,Close to Des plant,0,0,0,-,Included
+6/4/2023,Unknown,F2,M-GL,On Des plant,2,0,0,-,Included
+6/4/2023,Unknown,F3,M-GL,On Maize plant,1,0,3,-,Included
+6/4/2023,Unknown,F3,M-GL,Close to Maize plant,1,0,0,-,Included
+6/4/2023,Unknown,F3,M-GL,No Decision,0,0,0,-,Included
+6/4/2023,Unknown,F3,M-GL,Close to Des plant,0,0,0,-,Included
+6/4/2023,Unknown,F3,M-GL,On Des plant,0,3,0,-,Included
+6/4/2023,CO,G1,M-AD,On Maize plant,0,0,8,-,Included
+6/4/2023,CO,G1,M-AD,Close to Maize plant,3,0,0,-,Included
+6/4/2023,CO,G1,M-AD,No Decision,0,0,0,-,Included
+6/4/2023,CO,G1,M-AD,Close to Des plant,0,0,0,-,Included
+6/4/2023,CO,G1,M-AD,On Des plant,1,0,2,-,Included
+6/4/2023,CO,G2,M-AD,On Maize plant,1,0,4,-,Included
+6/4/2023,CO,G2,M-AD,Close to Maize plant,0,1,0,-,Included
+6/4/2023,CO,G2,M-AD,No Decision,0,1,0,-,Included
+6/4/2023,CO,G2,M-AD,Close to Des plant,0,0,0,-,Included
+6/4/2023,CO,G2,M-AD,On Des plant,0,0,0,-,Included
+6/4/2023,CO,G3,M-AD,On Maize plant,1,0,7,-,Included
+6/4/2023,CO,G3,M-AD,Close to Maize plant,0,1,1,-,Included
+6/4/2023,CO,G3,M-AD,No Decision,1,1,1,-,Included
+6/4/2023,CO,G3,M-AD,Close to Des plant,0,0,1,-,Included
+6/4/2023,CO,G3,M-AD,On Des plant,1,0,6,-,Included
+6/4/2023,DO,H1,M-M(AD),On Maize plant,0,0,5,-,Included
+6/4/2023,DO,H1,M-M(AD),Close to Maize plant,1,0,0,-,Included
+6/4/2023,DO,H1,M-M(AD),No Decision,0,1,0,-,Included
+6/4/2023,DO,H1,M-M(AD),Close to Des plant,0,0,0,-,Included
+6/4/2023,DO,H1,M-M(AD),On Des plant,0,1,1,-,Included
+6/4/2023,DO,H2,M-M(AD),On Maize plant,0,2,7,-,Included
+6/4/2023,DO,H2,M-M(AD),Close to Maize plant,0,0,0,-,Included
+6/4/2023,DO,H2,M-M(AD),No Decision,1,1,0,-,Included
+6/4/2023,DO,H2,M-M(AD),Close to Des plant,0,0,0,-,Included
+6/4/2023,DO,H2,M-M(AD),On Des plant,0,0,4,-,Included
+6/4/2023,DO,H3,M-M(AD),On Maize plant,1,0,1,-,Included
+6/4/2023,DO,H3,M-M(AD),Close to Maize plant,1,0,0,-,Included
+6/4/2023,DO,H3,M-M(AD),No Decision,1,0,0,-,Included
+6/4/2023,DO,H3,M-M(AD),Close to Des plant,0,0,2,-,Included
+6/4/2023,DO,H3,M-M(AD),On Des plant,1,0,2,-,Included
+6/4/2023,Unknown,J1,M-M(GL),On Maize plant,0,0,2,-,Included
+6/4/2023,Unknown,J1,M-M(GL),Close to Maize plant,1,0,0,-,Included
+6/4/2023,Unknown,J1,M-M(GL),No Decision,1,0,2,-,Included
+6/4/2023,Unknown,J1,M-M(GL),Close to Des plant,3,0,0,-,Included
+6/4/2023,Unknown,J1,M-M(GL),On Des plant,0,0,7,-,Included
+6/4/2023,Unknown,J2,M-M(GL),On Maize plant,0,0,4,-,Included
+6/4/2023,Unknown,J2,M-M(GL),Close to Maize plant,1,0,1,-,Included
+6/4/2023,Unknown,J2,M-M(GL),No Decision,3,0,0,-,Included
+6/4/2023,Unknown,J2,M-M(GL),Close to Des plant,0,0,0,-,Included
+6/4/2023,Unknown,J2,M-M(GL),On Des plant,1,0,10,-,Included
+6/4/2023,Unknown,J3,M-M(GL),On Maize plant,0,0,3,-,Included
+6/4/2023,Unknown,J3,M-M(GL),Close to Maize plant,1,0,0,-,Included
+6/4/2023,Unknown,J3,M-M(GL),No Decision,1,0,4,-,Included
+6/4/2023,Unknown,J3,M-M(GL),Close to Des plant,2,0,0,-,Included
+6/4/2023,Unknown,J3,M-M(GL),On Des plant,0,0,1,-,Included
+6/4/2023,DO,K1,Control,On Left plant,1,0,8,-,Included
+6/4/2023,DO,K1,Control,Close to Left plant,0,0,0,-,Included
+6/4/2023,DO,K1,Control,No Decision,0,4,6,-,Included
+6/4/2023,DO,K1,Control,Close to Right plant,0,0,0,-,Included
+6/4/2023,DO,K1,Control,On Right plant,0,0,0,-,Included
+6/4/2023,DO,K2,Control,On Left plant,2,0,0,-,Included
+6/4/2023,DO,K2,Control,Close to Left plant,0,0,0,-,Included
+6/4/2023,DO,K2,Control,No Decision,1,1,1,-,Included
+6/4/2023,DO,K2,Control,Close to Right plant,0,0,0,-,Included
+6/4/2023,DO,K2,Control,On Right plant,0,0,0,-,Included
+6/4/2023,DO,K3,Control,On Left plant,1,0,1,-,Included
+6/4/2023,DO,K3,Control,Close to Left plant,1,0,0,-,Included
+6/4/2023,DO,K3,Control,No Decision,2,0,1,-,Included
+6/4/2023,DO,K3,Control,Close to Right plant,0,0,0,-,Included
+6/4/2023,DO,K3,Control,On Right plant,0,1,0,-,Included
+7/3/2023,CO,A1,M-GL,On Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,CO,A1,M-GL,Close to Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,CO,A1,M-GL,No Decision,0,1,0,No Oviposition,Excluded
+7/3/2023,CO,A1,M-GL,Close to Des plant,0,2,0,No Oviposition,Excluded
+7/3/2023,CO,A1,M-GL,On Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,CO,A2,M-GL,On Maize plant,0,0,0,-,Included
+7/3/2023,CO,A2,M-GL,Close to Maize plant,2,0,2,-,Included
+7/3/2023,CO,A2,M-GL,No Decision,0,0,0,-,Included
+7/3/2023,CO,A2,M-GL,Close to Des plant,0,2,1,-,Included
+7/3/2023,CO,A2,M-GL,On Des plant,0,1,0,-,Included
+7/3/2023,MM,B1,M-M(AD),On Maize plant,0,0,1,Four moths dead on the third day. Only very small Desmodium plant used.,Included
+7/3/2023,MM,B1,M-M(AD),Close to Maize plant,0,2,0,Four moths dead on the third day. Only very small Desmodium plant used.,Included
+7/3/2023,MM,B1,M-M(AD),No Decision,0,1,0,Four moths dead on the third day. Only very small Desmodium plant used.,Included
+7/3/2023,MM,B1,M-M(AD),Close to Des plant,1,1,0,Four moths dead on the third day. Only very small Desmodium plant used.,Included
+7/3/2023,MM,B1,M-M(AD),On Des plant,0,0,2,Four moths dead on the third day. Only very small Desmodium plant used.,Included
+7/3/2023,MM,B2,M-M(AD),On Maize plant,0,0,1,All moths were dead on the third day,Included
+7/3/2023,MM,B2,M-M(AD),Close to Maize plant,0,1,1,All moths were dead on the third day,Included
+7/3/2023,MM,B2,M-M(AD),No Decision,0,0,3,All moths were dead on the third day,Included
+7/3/2023,MM,B2,M-M(AD),Close to Des plant,0,4,1,All moths were dead on the third day,Included
+7/3/2023,MM,B2,M-M(AD),On Des plant,0,0,1,All moths were dead on the third day,Included
+7/3/2023,NO,C1,M-M(GL),On Maize plant,2,0,0,No Oviposition,Excluded
+7/3/2023,NO,C1,M-M(GL),Close to Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,NO,C1,M-M(GL),No Decision,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,C1,M-M(GL),Close to Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,C1,M-M(GL),On Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,C2,M-M(GL),On Maize plant,0,0,1,Maybe influence from the left side because a Desmodium was placed there. No moths found. ,Included
+7/3/2023,NO,C2,M-M(GL),Close to Maize plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there. No moths found. ,Included
+7/3/2023,NO,C2,M-M(GL),No Decision,0,0,1,Maybe influence from the left side because a Desmodium was placed there. No moths found. ,Included
+7/3/2023,NO,C2,M-M(GL),Close to Des plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there. No moths found. ,Included
+7/3/2023,NO,C2,M-M(GL),On Des plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there. No moths found. ,Included
+7/3/2023,CO,D1,M-AD,On Maize plant,1,0,4,-,Included
+7/3/2023,CO,D1,M-AD,Close to Maize plant,0,1,0,-,Included
+7/3/2023,CO,D1,M-AD,No Decision,1,0,0,-,Included
+7/3/2023,CO,D1,M-AD,Close to Des plant,0,1,0,-,Included
+7/3/2023,CO,D1,M-AD,On Des plant,1,0,0,-,Included
+7/3/2023,CO,D2,M-AD,On Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,CO,D2,M-AD,Close to Maize plant,0,3,0,No Oviposition,Excluded
+7/3/2023,CO,D2,M-AD,No Decision,0,0,0,No Oviposition,Excluded
+7/3/2023,CO,D2,M-AD,Close to Des plant,0,1,0,No Oviposition,Excluded
+7/3/2023,CO,D2,M-AD,On Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,E1,Control,On Left plant,0,3,0,No Oviposition,Excluded
+7/3/2023,NO,E1,Control,Close to Left plant,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,E1,Control,No Decision,1,0,0,No Oviposition,Excluded
+7/3/2023,NO,E1,Control,Close to Right plant,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,E1,Control,On Right plant,0,1,0,No Oviposition,Excluded
+7/3/2023,NO,E2,Control,On Left plant,0,2,0,All moths dead on the third day,Included
+7/3/2023,NO,E2,Control,Close to Left plant,0,0,0,All moths dead on the third day,Included
+7/3/2023,NO,E2,Control,No Decision,0,2,1,All moths dead on the third day,Included
+7/3/2023,NO,E2,Control,Close to Right plant,0,0,0,All moths dead on the third day,Included
+7/3/2023,NO,E2,Control,On Right plant,0,1,0,All moths dead on the third day,Included
+7/3/2023,CO,F1,M-M(GL),On Maize plant,0,0,2,-,Included
+7/3/2023,CO,F1,M-M(GL),Close to Maize plant,0,1,1,-,Included
+7/3/2023,CO,F1,M-M(GL),No Decision,0,0,3,-,Included
+7/3/2023,CO,F1,M-M(GL),Close to Des plant,1,2,0,-,Included
+7/3/2023,CO,F1,M-M(GL),On Des plant,0,0,0,-,Included
+7/3/2023,CO,F2,M-M(GL),On Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,CO,F2,M-M(GL),Close to Maize plant,1,0,0,No Oviposition,Excluded
+7/3/2023,CO,F2,M-M(GL),No Decision,0,3,0,No Oviposition,Excluded
+7/3/2023,CO,F2,M-M(GL),Close to Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,CO,F2,M-M(GL),On Des plant,0,0,0,No Oviposition,Excluded
+7/3/2023,CO,F3,M-M(GL),On Maize plant,1,0,1,-,Included
+7/3/2023,CO,F3,M-M(GL),Close to Maize plant,0,0,0,-,Included
+7/3/2023,CO,F3,M-M(GL),No Decision,0,2,0,-,Included
+7/3/2023,CO,F3,M-M(GL),Close to Des plant,1,0,0,-,Included
+7/3/2023,CO,F3,M-M(GL),On Des plant,0,0,1,-,Included
+7/3/2023,NO,G1,Control,On Left plant,1,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,G1,Control,Close to Left plant,0,1,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,G1,Control,No Decision,0,1,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,G1,Control,Close to Right plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,G1,Control,On Right plant,0,1,1,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,G2,Control,On Left plant,0,1,0,No Oviposition,Excluded
+7/3/2023,NO,G2,Control,Close to Left plant,0,1,0,No Oviposition,Excluded
+7/3/2023,NO,G2,Control,No Decision,0,0,0,No Oviposition,Excluded
+7/3/2023,NO,G2,Control,Close to Right plant,0,2,0,No Oviposition,Excluded
+7/3/2023,NO,G2,Control,On Right plant,0,1,0,No Oviposition,Excluded
+7/3/2023,NO,G3,Control,On Left plant,1,0,0,-,Included
+7/3/2023,NO,G3,Control,Close to Left plant,0,0,0,-,Included
+7/3/2023,NO,G3,Control,No Decision,0,0,1,-,Included
+7/3/2023,NO,G3,Control,Close to Right plant,0,1,0,-,Included
+7/3/2023,NO,G3,Control,On Right plant,0,3,1,-,Included
+7/3/2023,MM,H1,M-AD,On Maize plant,0,0,2,-,Included
+7/3/2023,MM,H1,M-AD,Close to Maize plant,0,2,0,-,Included
+7/3/2023,MM,H1,M-AD,No Decision,1,0,0,-,Included
+7/3/2023,MM,H1,M-AD,Close to Des plant,0,1,0,-,Included
+7/3/2023,MM,H1,M-AD,On Des plant,0,0,0,-,Included
+7/3/2023,MM,H2,M-AD,On Maize plant,0,0,1,All moths dead on the third day,Included
+7/3/2023,MM,H2,M-AD,Close to Maize plant,0,1,0,All moths dead on the third day,Included
+7/3/2023,MM,H2,M-AD,No Decision,1,1,0,All moths dead on the third day,Included
+7/3/2023,MM,H2,M-AD,Close to Des plant,0,0,0,All moths dead on the third day,Included
+7/3/2023,MM,H2,M-AD,On Des plant,0,3,3,All moths dead on the third day,Included
+7/3/2023,MM,H3,M-AD,On Maize plant,1,0,1,-,Included
+7/3/2023,MM,H3,M-AD,Close to Maize plant,0,0,2,-,Included
+7/3/2023,MM,H3,M-AD,No Decision,0,1,0,-,Included
+7/3/2023,MM,H3,M-AD,Close to Des plant,0,0,0,-,Included
+7/3/2023,MM,H3,M-AD,On Des plant,0,2,2,-,Included
+7/3/2023,MM,J1,M-M(AD),On Maize plant,0,0,2,-,Included
+7/3/2023,MM,J1,M-M(AD),Close to Maize plant,0,1,0,-,Included
+7/3/2023,MM,J1,M-M(AD),No Decision,0,2,0,-,Included
+7/3/2023,MM,J1,M-M(AD),Close to Des plant,0,0,0,-,Included
+7/3/2023,MM,J1,M-M(AD),On Des plant,1,0,2,-,Included
+7/3/2023,MM,J2,M-M(AD),On Maize plant,0,0,1,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,MM,J2,M-M(AD),Close to Maize plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,MM,J2,M-M(AD),No Decision,0,2,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,MM,J2,M-M(AD),Close to Des plant,1,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,MM,J2,M-M(AD),On Des plant,0,1,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,J3,M-M(AD),On Maize plant,1,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,J3,M-M(AD),Close to Maize plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,J3,M-M(AD),No Decision,0,1,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,J3,M-M(AD),Close to Des plant,0,0,0,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,NO,J3,M-M(AD),On Des plant,0,1,2,Maybe influence from the left side because a Desmodium was placed there.,Included
+7/3/2023,CO,K1,M-GL,On Maize plant,0,0,6,-,Included
+7/3/2023,CO,K1,M-GL,Close to Maize plant,0,0,1,-,Included
+7/3/2023,CO,K1,M-GL,No Decision,0,1,0,-,Included
+7/3/2023,CO,K1,M-GL,Close to Des plant,0,0,0,-,Included
+7/3/2023,CO,K1,M-GL,On Des plant,0,1,0,-,Included
+7/3/2023,CO,K2,M-GL,On Maize plant,1,0,6,-,Included
+7/3/2023,CO,K2,M-GL,Close to Maize plant,0,0,0,-,Included
+7/3/2023,CO,K2,M-GL,No Decision,0,2,0,-,Included
+7/3/2023,CO,K2,M-GL,Close to Des plant,1,0,0,-,Included
+7/3/2023,CO,K2,M-GL,On Des plant,0,0,4,-,Included
+7/3/2023,CO,K3,M-GL,On Maize plant,0,0,1,-,Included
+7/3/2023,CO,K3,M-GL,Close to Maize plant,0,4,0,-,Included
+7/3/2023,CO,K3,M-GL,No Decision,0,0,0,-,Included
+7/3/2023,CO,K3,M-GL,Close to Des plant,1,0,0,-,Included
+7/3/2023,CO,K3,M-GL,On Des plant,0,0,0,-,Included
