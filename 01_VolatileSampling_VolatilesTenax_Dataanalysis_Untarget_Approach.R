@@ -29,9 +29,9 @@ library (ggrepel)
 library (ggpubr) #ggarrange
 
 # Read in the data
-SamplingDF <- read.csv("TenaxSamplingDF.csv", sep=";")
+SamplingDF <- read.csv("01_VolatileSamplingTenaxSamplingDF.csv", sep=";")
 # SamplingDF contains all parameters relevant for the sampling
-UntargetDF <-  read.csv("20240425_Insight_ManualIntegrations_CombinedLists.CSV")
+UntargetDF <-  read.csv("01_VolatileSampling_Insight_ManualIntegrations_CombinedLists.CSV")
 # UntargetDF contains the areas, similarity indices (SI) and height of the features identified in the untarget analysis
 
 # Adding number for each target volatile & Rearrangement/ Reduction of the columns
