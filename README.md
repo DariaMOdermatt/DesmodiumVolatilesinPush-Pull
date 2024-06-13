@@ -1,18 +1,12 @@
-This data repository contains all raw data and relevant data sets for the preprint / publication "Desmodium Volatiles in ``Push-Pull'' Agriculture and Protection Against the Fall Armyworm, Spodoptera frugiperda" written by Daria M. Odermatt, Frank Chidawanyika, Daniel M. Mutyambai, Bernhard Schmid, Luiz A. Domeignoz-Horta, Amanual Tamiru and Meredith C. Schuman. The statistical graphs were created in R with minor graphical adjustents (such as conversion the words Desmodium, D. intortum or D. incanum into italics) done in a graphical programm.
+This data repository contains all data sets and the statistical analysis used for the preprint / publication "Desmodium Volatiles in ``Push-Pull'' Agriculture and Protection Against the Fall Armyworm, Spodoptera frugiperda" written by Daria M. Odermatt, Frank Chidawanyika, Daniel M. Mutyambai, Bernhard Schmid, Luiz A. Domeignoz-Horta, Amanual Tamiru and Meredith C. Schuman. The statistical graphs were created in R with minor formatting adjustents (such as conversion the words Desmodium, D. intortum or D. incanum into italics) done in a graphical programm.
 
 The data files are subdivided in the three parts of the experiments: 
-1) Volatile sampling of Desmodium intortum, D. incanum and maize headspaces.
-2) Oviposition Bioassays with comparison of the fall armyworm moth oviposition on maize vs. Desmodium in direct and indirect treatments
-3) Wind tunnel Bioassay with comparison of the fall armyworm moth behaviour in abundance of maize vs. maize + Desmodium volatiles. 
+01) Volatile sampling of Desmodium intortum, D. incanum and maize headspaces.
+02) Oviposition Bioassays with comparison of the fall armyworm moth oviposition on maize vs. Desmodium in direct and indirect treatments
+03) Wind tunnel Bioassay with comparison of the fall armyworm moth behaviour in abundance of maize vs. maize + Desmodium volatiles. 
 
-In the section 1_VolatileSampling all raw datafiles of the TD-GC-MS measurements can be found, as well as relevant parameters for the feature detection by MZmine (Version 3.9.0, https://doi.org/10.1038/s41587-023-01690-2) and the peak integration by LabSolutions Insight (Shimadzu corporation, Kyoto, Japan).
 
-In the section 2_OvipositionBioassay all notes about the egg batch acquisition and all processed and unprocessed picures of the collected eggs can be found. Additionally, the code and a guide for the use of a semi-automatic egg count process with ImageJ (Version 1.54f, National Institutes of Health, USA) is provided. 
-
-In the section 3_WindtunnelBioassay all observations of the wind tunnel assays can be found in an summarised csv-file, as well as the codes for the excel macros used for data arrangement. 
-The videos recurings of the wind tunnel experiments can be made available on request (daria.odermatt@bluewin.ch).
-
-The parameter descriptions off the files used for the statistical analysis can be found below:
+The parameter descriptions of the files used for the statistical analysis can be found below:
 
 01_VolatileSampling_Insight_ManualIntegrations_CombinedLists.csv:
 All substances are listed in the rows, while the area, similarity index with the reference spectra (SI) and height of the peaks of each sample are provided in the columns with a separation of ":" (e.g. A1 - Rusinga - 05.05.2023_662023_5 : Height).
