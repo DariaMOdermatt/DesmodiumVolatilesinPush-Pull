@@ -30,12 +30,8 @@ library (lme4) #mixed model
 library (lmerTest) #mixed model
 
 
-# Now read in the data
-# Laptop
-WindtunnelDataset <- read.csv("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/7_WindtunnelBioassays/AnalysisR_Windtunnel-Experiments-Collecting-data_SeriesB.csv")
-
-#Computer
-WindtunnelDataset <- read.csv("C:/Users/daoder/OneDrive - UniversitÃ¤t ZÃ¼rich UZH/Masterthesis/7_WindtunnelBioassays/AnalysisR_Windtunnel-Experiments-Collecting-data_SeriesB.csv")
+# Read in the data
+WindtunnelDataset <- read.csv("03_Windtunnel_ObservedData.csv")
 
 names(WindtunnelDataset) <- c("Original.Location", "Location", "Clock", "Date", "Treatment", "Repetition", "Treatment.Left", "Treatment.Right", "Responding", "Commment", "Video.Save.Time", "Determiantion.via.Video")
 
@@ -315,7 +311,7 @@ plotSett <- aggSett %>%
   geom_text(aes(label=Total_count),color = 'white')
 plotSett
 
-imgTreatment <- readPNG("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/7_WindtunnelBioassays/Setup_Windtunnel_margins.png")
+imgTreatment <- readPNG("03_Windtunnel_Setup_margins.png")
 imgTreatment <- rasterGrob(imgTreatment, interpolate=TRUE)
 
 

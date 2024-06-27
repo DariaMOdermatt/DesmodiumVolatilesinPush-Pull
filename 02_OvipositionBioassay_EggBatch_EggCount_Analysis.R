@@ -47,9 +47,9 @@ library (lmerTest) #mixed model
 ##################################################################################'
 
 # Read in the data
-EggBatchDataset <- read.csv("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/11_SuplementaryData/DesmodiumVolatilesinPushPull/2_OvipositionBioassay/AnalysisR_Oviposition-1-EggBatches-Summary.csv")
+EggBatchDataset <- read.csv("02_Oviposition-1-EggBatches-Summary.csv")
 # EggBatchDataset contains all counted Egg batches, all dead moths, comments and Treatments
-EggCountDataset <- read.csv("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/11_SuplementaryData/DesmodiumVolatilesinPushPull/2_OvipositionBioassay//AnalysisR_Oviposition-2-EggCount-Summary.csv")
+EggCountDataset <- read.csv("02_Oviposition-2-EggCount-Summary.csv")
 # EggCountDataset contains the eggs per picture
 
 # Renaming of the headers
@@ -300,11 +300,11 @@ Merged$variable <- ifelse (Merged$variable == "EggsRel", "Rel. no. of eggs",
 
 
 #Graph with setup panels
-imgControl <- readPNG("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/6_OvipositionBioassays/3_DataAnalysis_Statistics/PicturesSetup/Oviposition_Control.png")
+imgControl <- readPNG("02_Oviposition_Control.png")
 imgControl <- rasterGrob(imgControl, interpolate=TRUE)
-imgDirect <- readPNG("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/6_OvipositionBioassays/3_DataAnalysis_Statistics/PicturesSetup/Oviposition_DirectTreatment.png")
+imgDirect <- readPNG("02_Oviposition_DirectTreatment.png")
 imgDirect <- rasterGrob(imgDirect, interpolate=TRUE)
-imgIndirect <- readPNG("C:/Users/Konto/OneDrive - Universität Zürich UZH/Masterthesis/6_OvipositionBioassays/3_DataAnalysis_Statistics/PicturesSetup/Oviposition_IndirectTreatment.png")
+imgIndirect <- readPNG("02_Oviposition_IndirectTreatment.png")
 imgIndirect <- rasterGrob(imgIndirect, interpolate=TRUE)
 
 Merged$Treatment <- factor(Merged$Treatment, levels = c("Control","D. incanum direct",  "D. incanum indirect","D. intortum direct", "D. intortum indirect"))
@@ -343,7 +343,7 @@ EffectSize$MaizevsDes <- ifelse(is.na(EffectSize$MaizevsDes), EffectSize$`On mai
 ##################################################################################'
 
 #Creating a data file reserved for statistics
-StatisticsDF <- filter(Merged, variable == "Rel. No of Eggs")
+StatisticsDF <- filter(Merged, variable == "Rel. no. of eggs")
 StatisticsDF <- select(StatisticsDF, Start.Date, Cage, Position, Treatment, SumEggs, Rel.NoEggs_Batches)
 colnames(StatisticsDF)[6] <- c("RelEggNo")
 
