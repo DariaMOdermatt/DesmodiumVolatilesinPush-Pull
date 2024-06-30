@@ -290,12 +290,12 @@ Heatmap %>%
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+  
   guides(fill = guide_colorbar(title.position = "top", title.hjust = 0.5) )+
-  theme(text=element_text(size=11, family = "sans"), legend.key.size = unit(0.5, 'cm'), legend.position = c(-.4, -.20), legend.direction = "horizontal", plot.margin = margin(0,0,0,0, "cm"))+
+  theme(text=element_text(size=11, family = "sans"), legend.key.size = unit(0.5, 'cm'), legend.position = c(-.2, -.20), legend.direction = "horizontal", plot.margin = margin(0,0,0,0, "cm"))+
   geom_point(aes(size="NA"), shape =NA, colour = "grey")+ # for the grey color in the legend
   guides(size=guide_legend("Found in fewer than \n 2/3 of the samples", override.aes=list(shape=15, size = 7), ))
 
 
-ggsave(file="Volatiles_Res_Heatmap.pdf", width = 8.7, height = 13, units = "cm", dpi=700)  
+ggsave(file="Volatiles_Res_Heatmap.pdf", width = 13, height = 13, units = "cm", dpi=700)  
 
 
 # Heatmap for supporting information displays all hits in all samples

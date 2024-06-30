@@ -317,7 +317,7 @@ imgTreatment <- rasterGrob(imgTreatment, interpolate=TRUE)
 
 # Final Graph
 plot <- ggarrange(plotAct2, imgTreatment, plotTreat, plotSett,
-          heights = c(1.2,0.6, 1, 0.2),
+          heights = c(1.2,0.7, 1, 0.2),
           labels = c("A", "B", "C", ""),
           ncol = 1, nrow = 4)
 plot
