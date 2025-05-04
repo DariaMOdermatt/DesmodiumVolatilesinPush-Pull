@@ -1,0 +1,211 @@
+---
+title: "04_NoChoiceAssay"
+author: "Daria Odermatt, University of Zurich"
+date: "2025-01-27"
+output:
+pdf_document: default
+html_document: default
+
+# The data file contains the summarized raw data of all no-choice trials and is analyzed in the following steps:
+# 1. Reading & Data Organization
+# 2. Analysis of Moth Activity
+# 3. Video Observations
+# 4. Filtering for Responsive Moths
+# 5. Filtering for Responsive Moths
+# 6. Statistical Analysis 
+---
+
+## 1. Reading & Data Organization
+```{r setup, include=FALSE}
+# Clear R's memory
+rm(list=ls())
+
+# Load necessary libraries
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(ggtext)
+library(tidyverse)
+library(stringr)
+library(tidyr)
+library(png)
+library(grid)
+library(ggpubr)
+library(lme4)
+library (lmerTest) #mixed model
+
+
+# Read in the data files
+DFNoChoice <- read.csv2("04_NoChoiceAssay_Live.csv", fileEncoding = "UTF-8-BOM")
+DFObservation <- read.csv2("04_NoChoiceAssay_VideoObservation.csv", fileEncoding = "UTF-8-BOM")
+
+# Comment: The file DFNoChoice contains all data observed during live observations, including behavioral responses and flight distances. The file DFObservation provides time of the moths’ last movement, which was used to determine their final decision, which was extracted from videos recorded during the bioassays. Two repetitions (one from the maize treatment and one from the maize + D. intortum treatment) were excluded from DFNoChoice due to the loss of video footage.
+
+DFObservation$Time_s <- as.numeric(DFObservation$Time_s)
+
+```
+
+
+## 2. Analysis of Moth Activity
+```{r activity}
+# Extract Treatment and repetition from the video name in the observation dataset
+DFObservation$Treatment <- sapply(strsplit(DFObservation$VideoName, "_"), function(x) x[2])
+DFObservation$RepetitionNo <- sub(".*Rep([0-9]{1,2})$", "\\1", DFObservation$VideoName)
+DFObservation$Treatment <- gsub("Maize\\+Incanum", "Maize + D. incanum", DFObservation$Treatment)
+DFObservation$Treatment <- gsub("Maize\\+D.intortum", "Maize + D. intortum", DFObservation$Treatment)
+
+# Summarizing the moth activity per treatment
+DFSum <- DFNoChoice %>%
+  group_by(Treatment) %>%
+  summarise(N = n(),
+            WingFanning = sum(WingFanning == "Yes"),
+            Walking = sum(Walking == "Yes"),
+            TakeOff = sum(TakeOff == "Yes"),
+            UpwindFlight = sum(UpwindFlight == "Yes"))
+
+DFSum$Unresponsive <- DFSum$N - DFSum$WingFanning
+colnames(DFSum) <- c("Treatment", "n Repetitions", "Wing Fanning", "Walking", "Take Off", "Upwind Flight", "Unresponsive")
+
+# Plotting activity by treatment
+DFSum <- pivot_longer(DFSum, cols = c('Unresponsive', 'Wing Fanning', 'Walking', 'Take Off', 'Upwind Flight'))
+DFSum$name <- factor(DFSum$name , levels=c( 'Unresponsive', 'Wing Fanning', 'Walking', 'Take Off', 'Upwind Flight'))
+
+DFSum %>%
+  ggplot(aes(x = name, y = value, fill = Treatment)) + 
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(y= "Count", x= "") +
+  theme_bw() +
+  scale_fill_viridis_d() +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  theme(text=element_text(size=9))
+
+# Comment: During the maize treatments, an unusually high number of moths showed no response at all (not even wing fanning). This lack of activity suggests that the moths may not have been healthy. In contact with a repellent odor, moths are expected to avoid movement toward the the odor but still exhibit some behavioral response. Therefore, additional maize treatments were conducted to ensure a minimum of 19 responsive moths, aligning the group size with the other treatment groups.
+```
+
+
+## 3. Video Observations
+```{r NoMovement}
+# Comment: Several videos did not show the moths, which is plausible given that not all angles of the no-choice setup were visible on video. In cases where only a single movement was observed in live observation, it was assumed that the moth had made a decision, even if the exact timing of that decision could not be determined which plays a role in later analysis. Videos showing more than one movement without any option to check the time in the video were excluded from statistical analysis.
+
+# Sum movements
+DFNoChoice$SumMovement <- DFNoChoice$MovementsForward + DFNoChoice$MovementsBackward
+DFNoChoice <- filter (DFNoChoice, Comment != "Moth not visible" | SumMovement <=1)
+```
+
+
+## 4. Filtering for Responsive Moths
+```{r resonse}
+# Merging DFNoChoice and DFObservation
+result <- merge(DFNoChoice, DFObservation, by = c("Treatment", "RepetitionNo"), all.x = TRUE)
+
+# Categorize activity levels of the moths
+# Comment: Moths were considered to have made a decision if they either responded within 3 minutes or showed minimal movement (fewer than one movement) when not visible in the videos. Moths that continued moving during the last two minutes of the experiment or showed no response at all were excluded from further analysis.
+DFcombined <- result %>%
+  mutate(Decision = ifelse(Response == "no", "No Decision",
+                           ifelse(is.na(Time_s)|Comment=="Moth not visible", "decision",
+                                  ifelse(Time_s < 180, "decision","No Decision"))))
+table(DFcombined$Decision, DFcombined$Treatment) 
+```
+
+
+## 5. Analysis of Flight Distance
+```{r flight distance}
+
+# Save datafile for statistics in the following section
+DFStatistics <- DFcombined
+
+# Reorganisation and Reformatting 
+DFcombined <- pivot_longer(DFcombined, cols = c("InitialDistance", "LandingDistance"))
+DFcombined <- DFcombined %>%
+  mutate(name = recode(name, "InitialDistance" = "Initial Distance", "LandingDistance" = "Landing Distance"))
+
+labels <- c(
+  Control = "Control", 
+  Maize = "Maize",
+  'Maize + D. intortum' = "Maize + *D.intortum*",
+  'Maize + D. incanum' = "Maize + *D.incanum*"
+  )
+
+# Plot for initial and landing distance
+plot1 <- DFcombined %>%
+  filter(Decision == "decision")%>%
+  ggplot(aes(x = Treatment, y = value)) + 
+  geom_violin(trim=FALSE, fill="grey90", color= NA)+
+  geom_dotplot(binaxis='y', stackdir='center', dotsize=0.5)+
+  stat_summary(geom = "point", fun = mean,color = "red", size = 2) +
+  facet_wrap(~name, scales = "free_y") +
+  labs(y = "Distance flown [cm]", x = "Treatment") +
+  theme_bw() +
+  ylim(-10,125)+
+  scale_x_discrete(guide = guide_axis(n.dodge = 2), name = NULL, labels = labels) +
+  theme(text = element_text(size = 10),  axis.text = element_text(size = 9), strip.text = element_text(size = 10),
+        axis.text.x = element_markdown(color = "black", size = 9), legend.position = "none")
+plot1
+
+
+imgTreatment <- readPNG("04_NoChoiceAssay.png")
+imgTreatment <- rasterGrob(imgTreatment, interpolate=TRUE)
+
+plot_comb1 <- ggarrange(imgTreatment, plot1,
+                       widths = c(1,2),
+                       heights = c(1.5,2.5),
+                       labels = c("A", "B"),
+                       ncol = 1, nrow = 2)+
+theme(plot.margin = margin(0.1,0.2,0.1,0.1, "cm")) 
+
+plot_comb1
+ggsave("figure 6_NoChoiceAssay.pdf", width = 17.8, height = 15, units = "cm", dpi=700)
+
+```
+
+
+## 6. Statistical Analysis
+```{r statistics}
+DFStatistics <- filter(DFStatistics, Decision == "decision")
+
+# Perform ANOVA to compare distances flown by treatment
+InitialDis_result <- aov(InitialDistance ~ Treatment, data = DFStatistics)  
+summary(InitialDis_result)
+
+LandingDis_result <- aov(LandingDistance ~ Treatment, data = DFStatistics)  
+summary(LandingDis_result)
+
+# Creating the columns to enable comparisons between the different treatment groups (e.g. Control vs. Treatments)
+DFStatistics$ContrvsTreat <- ifelse(DFStatistics$Treatment == "Control", "Control", "Treatment")
+DFStatistics$MaizevsDes <- ifelse(DFStatistics$Treatment == "Maize" | DFStatistics$Treatment == "Control", "Maize", "Des")
+DFStatistics$IncvsInt <- ifelse(DFStatistics$Treatment == "Maize + D. incanum", "Inc", "Int+Maize")
+
+# Factorising All Variables
+DFStatistics$ContrvsTreat <- factor(DFStatistics$ContrvsTreat)
+DFStatistics$MaizevsDes <- factor(DFStatistics$MaizevsDes)
+
+# Distributions of data
+hist(DFStatistics$InitialDistance, n=20)
+hist(DFStatistics$LandingDistance, n=20)
+# Comment: The data for both parameters do not show a normal distribution. Attempts to normalize the data using logarithmic, logit, and exponential transformations were unsuccessful in improving the distribution.
+
+# Linear model for Initial & Landing Distance
+lm1 <- lm(InitialDistance ~ ContrvsTreat + MaizevsDes + Treatment, data = DFStatistics)
+anova(lm1)
+par(mfrow=c(2,2))
+plot(lm1)
+
+lm2 <- lm(LandingDistance ~ ContrvsTreat + MaizevsDes + Treatment, data = DFStatistics)
+anova(lm2)
+plot(lm2)
+lm2 <- lm(LandingDistance ~ ContrvsTreat + IncvsInt + MaizevsDes, data = DFStatistics)
+anova(lm2)
+plot(lm2)
+
+# Mixed models for Initial & Landing Distance
+lmer1 <- lmer(InitialDistance ~ ContrvsTreat + MaizevsDes + Treatment+(1|Date)+ (1|RepetitionNo),data=DFStatistics)
+anova(lmer1,type=1)
+plot(lmer1)
+lmer1
+
+lmer2 <- lmer(LandingDistance ~ ContrvsTreat + MaizevsDes + Treatment++(1|Date)+(1|RepetitionNo),data=DFStatistics)
+anova(lmer2,type=1)
+plot(lmer2)
+lmer2
+
+```

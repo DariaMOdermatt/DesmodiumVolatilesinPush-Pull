@@ -23,6 +23,7 @@ library(readr)
 library (tidyr)  #for reshaping the columns
 library(dplyr)
 library(ggplot2)
+library(ggtext)
 library (stringr) #str_split
 library (ggfortify) #PCA plots
 library (ggrepel)
@@ -53,7 +54,7 @@ Rearr_UntargetDF$Substance <- gsub('MZ: ', "", Rearr_UntargetDF$Substance)
 Rearr_UntargetDF$Substance <- gsub('\\(MZ): ', "", Rearr_UntargetDF$Substance) #\\ is needed before brackets
 Rearr_UntargetDF$Substance <- str_to_title(Rearr_UntargetDF$Substance) 
 Rearr_UntargetDF$Substance <- gsub('.Alpha.', "\U03B1", Rearr_UntargetDF$Substance)
-Rearr_UntargetDF$Substance <- gsub('Alpha', "\U03B1", Rearr_UntargetDF$Substance)
+Rearr_UntargetDF$Substance <- gsub('Alpha-', "\U03B1-", Rearr_UntargetDF$Substance)
 Rearr_UntargetDF$Substance <- gsub('.Beta.', "\U03B2", Rearr_UntargetDF$Substance)
 Rearr_UntargetDF$Substance <- gsub('.Gamma.', "\U03B3", Rearr_UntargetDF$Substance)
 Rearr_UntargetDF$Substance <- gsub('.Delta.', "\U03B4", Rearr_UntargetDF$Substance)
@@ -182,21 +183,28 @@ Qual <- Filter_Merged %>%
   group_by(Substance, Species, Location) %>%
   summarise(Total_count=n(), mean_logArea_without0 = mean(LogArea),.groups = 'drop')
 
-Qual <- Filter_Merged %>%
+Qual <- Filter_Merged %>% #Adding the mean with all zero values
+  mutate(LogArea = ifelse(is.na(LogArea), 0, LogArea)) %>%  # Replace NA with 0
+  group_by(Substance, Species, Location) %>%
+  summarise(mean_logArea_with0 = mean(LogArea), .groups = 'drop') %>%
+  merge(., Qual, by = c("Species", "Location", "Substance"), all.y = TRUE, all.x = TRUE)
+
+Qual <- Filter_Merged %>% #Addition of the total sample number per species and location 
   group_by(Species, Location) %>%
   summarise(Total_count=n()/n_distinct(Substance),.groups = 'drop') %>%
   merge(., Qual, by = c("Species", "Location"), all.y = TRUE, all.x = TRUE)
 
-names(Qual) <- c("Species", "Location", "Max_n", "Substance", "Total_count", "Mean_LogArea")
+names(Qual) <- c("Species", "Location", "Max_n", "Substance", "Mean_LogArea_With0", "Total_count", "Mean_LogArea_Without0")
 
-# Including zero hits
-Qual <- Qual %>% 
-  group_by(Species) %>%
-  complete(Location, Substance, fill = list(Mean_LogArea = 0, Total_count = 0))
+Qual <- Qual %>% #Replace NA of Total_count and mean_logArea_without0 with 0
+  mutate(Total_count = ifelse(is.na(Total_count), 0, Total_count), Mean_LogArea_Without0 = ifelse(is.na(Mean_LogArea_Without0), 0, Mean_LogArea_Without0))
+  
+#Supplementary Table2
+#Relative qualitative abundance
+Qual$RelQual <- Qual$Total_count / Qual$Max_n
 
-Qual <- Qual %>% 
-  group_by(Location) %>%
-  complete(Species, Substance, fill = list(Mean_LogArea = 0, Total_count = 0))
+SuppTab2 <- select(filter(Qual, Location == "Field"), -Location, -Total_count, -Max_n) #Location (it was filtered for only field) and Total_count (relative count is still available) are not needed anymore.
+SuppTab2 <- pivot_wider(SuppTab2, names_from = Species, values_from = c(RelQual,Mean_LogArea_Without0, Mean_LogArea_With0))
 
 # Quantitative Comparison
 Filter_Merged %>%
@@ -281,6 +289,13 @@ Heatmap$MeanLogAreaAdj <-   ifelse (Heatmap$Location == "Field",
                            ifelse (Heatmap$Species == "D. incanum",ifelse (Heatmap$Total_count <9,NA,
                                Heatmap$MeanLogAreaAdj), Heatmap$MeanLogAreaAdj), Heatmap$MeanLogAreaAdj)
 
+xlabels <- c(
+  'D. incanum Field' = "<i>D.incanum</i> Field",
+  'D. incanum Pot' = "<i>D.incanum</i> Pot",
+  'D. intortum Field' = "<i>D.intortum</i> Field",
+  'D. intortum Pot' = "<i>D.intortum</i> Pot")
+
+
 Heatmap %>%
   mutate(Species_Location = paste(Species, Location)) %>%
   ggplot(aes(x = Species_Location, y = Substance, fill = MeanLogAreaAdj)) +
@@ -289,13 +304,13 @@ Heatmap %>%
   labs(x="", y= "Target Substance", fill = "log(Area)")+  
   theme_bw()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+  
+  scale_x_discrete(name = NULL, labels = xlabels) +
   guides(fill = guide_colorbar(title.position = "top", title.hjust = 0.5) )+
-  theme(text=element_text(size=11, family = "sans"), legend.key.size = unit(0.5, 'cm'), legend.position = c(-.2, -.20), legend.direction = "horizontal", plot.margin = margin(0,0,0,0, "cm"))+
+  theme(text=element_text(size=11, family = "sans"), legend.key.size = unit(0.5, 'cm'), legend.position = c(-.2, -.20), legend.direction = "horizontal", plot.margin = margin(0,0,0,0, "cm"), axis.text = element_markdown(size = 11))+
   geom_point(aes(size="NA"), shape =NA, colour = "grey")+ # for the grey color in the legend
   guides(size=guide_legend("Found in fewer than \n 2/3 of the samples", override.aes=list(shape=15, size = 7), ))
-
-
-ggsave(file="Volatiles_Res_Heatmap.pdf", width = 13, height = 13, units = "cm", dpi=700)  
+ggsave(file="figure 2_VolatilesHeatmap.pdf", width = 14, height = 13, units = "cm", dpi=700)
+##Comment: The italics were adjusted in a graphics programm after creation of the graph
 
 
 # Heatmap for supporting information displays all hits in all samples
@@ -310,7 +325,8 @@ Filter_Merged %>%
   theme(axis.text.x = element_blank(), axis.ticks = element_blank())+  
   theme(text=element_text(size=8, family = "sans"), legend.key.size = unit(0.5, 'cm'), legend.position = "bottom", legend.direction = "horizontal", plot.margin = margin(0,0,0,0, "cm"))
 
-ggsave(file="Volatiles_Supp_Heatmap.pdf", width = 17.8, height = 13, units = "cm", dpi=700)  
+ggsave(file="figure 2 - figure supplement 1_Volatiles_Heatmap.pdf", width = 17.8, height = 13, units = "cm", dpi=700) 
+##Comment: The italics were adjusted in a graphics programm after creation of the graph
 
 ##################################################################################'
 # 7. Statistics & PCA ----
@@ -378,4 +394,4 @@ ggarrange(PCAPlot, Loadings,
                   ncol = 2, nrow = 1,
                   align = "h")
 ggsave("Volatiles_Res_PCA.pdf", width = 17.8, height = 11, units = "cm", dpi=700)
-
+##Comment: The italics were adjusted in a graphics programm after creation of the graph

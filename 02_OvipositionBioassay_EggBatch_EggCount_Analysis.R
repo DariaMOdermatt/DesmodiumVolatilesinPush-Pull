@@ -30,6 +30,7 @@ rm(list=ls())
 library(readr)
 library(dplyr)
 library(ggplot2)
+library(ggtext)
 library (data.table) #melt
 library(tidyverse)#pivot_longer
 library (stringr) #str_split_fixed
@@ -224,6 +225,14 @@ Merged$Treatment <- ifelse(Merged$Treatment == "M-AD", "D. incanum direct",
                                    ifelse(Merged$Treatment == "M-M(AD)", "D. incanum indirect", 
                                           ifelse (Merged$Treatment == "M-M(GL)", "D. intortum indirect", Merged$Treatment))))
 
+#Definition of the formatting of the treatments
+labels <- c(
+  Control = "Control",
+  'D. incanum direct' = "<i>D.incanum</i> direct",
+  'D. incanum indirect' = "<i>D.incanum</i> indirect",
+  'D. intortum direct' = "<i>D.intortum</i> direct",
+  'D. intortum indirect' = "<i>D.intortum</i> indirect")
+
 #Setting all empty cells to 0
 Merged$SumEggs <-  if_else(is.na(Merged$SumEggs), 0, Merged$SumEggs)
 
@@ -237,10 +246,10 @@ EggsTreatment$Treatment <- factor(EggsTreatment$Treatment, levels = c("Control",
 EggsPerTreatment <- ggplot(data = EggsTreatment, aes(x= Treatment, y = SumEggsTreat))+
   theme_bw()+
   geom_jitter(col = 'grey', width =0.1)+
-  scale_x_discrete(guide = guide_axis(n.dodge = 2))+
+  scale_x_discrete(guide = guide_axis(n.dodge = 2), name = NULL, labels = labels)+
   geom_point(stat = "summary", fun = "mean", colour = 'black', size = 3, shape =18)+
   labs(x = "", y = "Sum eggs per repetition")+
-  theme(text=element_text(size=9), plot.margin = margin(0.2,4,0.2,4, "cm"))
+  theme(text=element_text(size=9), plot.margin = margin(0.2,4,0.2,4, "cm"), axis.text = element_markdown(size = 9))
 EggsPerTreatment
 
 # 2) Ratio Egg count per batch
@@ -255,23 +264,29 @@ Merged$EggsPerBatch <-Merged$SumEggs/ Merged$BatchCount
 Merged$Position <- factor(Merged$Position, levels = c("On maize plant", "On left plant", "Close to maize plant", "Close to left plant" , "No decision", "Close to Des plant", "Close to right plant" ,"On Des plant", "On right plant", "On Des treat"))
 
 # Box + Dot plot
-EggsPerBatch <- ggplot(data= Merged, aes(x=Position, y = EggsPerBatch))+
-  geom_boxplot(alpha = 0, color = 'black', lwd = 0.2) +
-  geom_dotplot (binaxis='y', stackdir='center', dotsize=0.7, fill = 'grey70')+
-  facet_wrap(~Treatment, scales = "free_x")+
-  scale_x_discrete(guide = guide_axis(n.dodge = 2))+
-  ylim(0, 830)+
-  labs(x = "", y = "Eggs per batch")+
-  theme_bw()+
-  theme(axis.title = element_text (size = 9),text=element_text(size=7.3),plot.margin = margin(0.2,0.5,0.2,0.6, "cm"))
+EggsPerBatch <- ggplot(data = Merged, aes(x = Position, y = EggsPerBatch)) +
+  geom_boxplot(alpha = 0, color = 'black', lwd = 0.2) +  # Boxplot (alpha = 0 for invisible fill)
+  geom_dotplot(binaxis = 'y', stackdir = 'center', dotsize = 0.7, fill = 'grey70') +  # Dotplot
+  facet_wrap(~Treatment, scales = "free_x", labeller = labeller(Treatment = labels)) +  # Facets with custom labels
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +  # Adjust x-axis labels
+  ylim(0, 830) +  # Set y-axis limits
+  labs(x = "", y = "Eggs per batch") +  # Axis labels
+  theme_bw() +  # Use black-and-white theme
+  theme(
+    axis.title = element_text(size = 9),  # Axis title font size
+    legend.text = element_markdown(size = 8),  # If you have a legend, apply markdown to the legend text
+    strip.text = element_markdown(size = 8),  # Apply markdown (HTML tags like <i>) to facet labels
+    text = element_text(size = 7.3),  # Set base text size
+    plot.margin = margin(0.2, 0.5, 0.2, 0.6, "cm"))  # Adjust plot margins
 EggsPerBatch
 
 plotSupp <- ggarrange(EggsPerTreatment, EggsPerBatch,
-                  widths = c(0.5,1),
+                  heights = c(0.8,1),
                   labels = c("A", "B"),
-                  ncol = 1, nrow = 2)
+                  ncol = 1, nrow = 2)+
+theme(plot.margin = margin(0.1,0,0,0, "cm")) 
 plotSupp
-ggsave("Ovi_Suppl_EggsPerTreatBatch.pdf", width = 17.8, height = 20, units = "cm", dpi=700)
+ggsave("figure 4 - figure supplement 1_EggsPerTreatBatch.pdf", width = 17.8, height = 20, units = "cm", dpi=700)
 
 ##################################################################################'
 # 5. Vizualisation of the EggCount on the different Positions ----
@@ -313,21 +328,29 @@ ABC
 #DE
 "
 
-plot <- ggplot(data= Merged, aes(x=Position, y = as.numeric(Rel.NoEggs_Batches), fill = variable))+
-  geom_boxplot(lwd = 0.2, outlier.size = 0.7)+ 
-  facet_wrap(~Treatment, scales = "free_x")+
-  scale_x_discrete(guide = guide_axis(n.dodge=2))+
-  labs(y= "Relative amount of eggs or batches per position", x="", fill = "")+
-  theme_bw()+
-  scale_fill_brewer(palette="Greys")+
-  theme(legend.position = c(0.15, 0.3), text = element_text(size = 13))+
-  theme(axis.title = element_text (size = 9),text=element_text(size=8.1), plot.margin = margin(0.2,0.1,0,0.2, "cm"))+
-  ggh4x::facet_manual(~Treatment, design = design, scales = "free_x")
+plot <- ggplot(data = Merged, aes(x = Position, y = as.numeric(Rel.NoEggs_Batches), fill = variable)) +
+  geom_boxplot(lwd = 0.2, outlier.size = 0.7) +  # Boxplot
+  ggh4x::facet_manual(~Treatment, design = design, scales = "free_x", labeller = labeller(Treatment = labels)) +  # Custom facet arrangement with ggh4x
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +  # Adjust x-axis labels with dodging
+  labs(y = "Relative amount of eggs or batches per position", x = "", fill = "") +  # Axis labels
+  scale_fill_brewer(palette = "Greys") +  # Color palette
+  theme_bw() +  # Base theme
+  theme(
+    legend.position = c(0.15, 0.3),  # Position of the legend
+    text = element_text(size = 8.1),  # General text size
+    axis.title = element_text(size = 9),  # Axis title size
+    legend.text = element_text(size = 8),  # Legend text size
+    strip.text = element_markdown(size = 8),  # Facet labels with Markdown (for HTML tags like <i>)
+    plot.margin = margin(0.2, 0.1, 0, 0.2, "cm")  # Plot margins
+  )
 
+
+plot
 imgSetups <- ggarrange(ggplot() + theme_void(), imgControl, ggplot() + theme_void(), imgDirect,  ggplot() + theme_void(), imgIndirect,  ggplot() + theme_void(), widths = c(0.125,0.157,0.146,0.157,0.151,0.206,0.049), labels = c("","A","", "B", "", "C", ""), ncol = 7, nrow = 1, hjust = 1.5)
 
-ggarrange(imgSetups, plot, heights = c(0.4, 1), labels = c("", "D"), ncol = 1, nrow = 2)
-ggsave(file="Ovi_Res_Treatments.pdf", width = 17.8, height = 13, units = "cm", dpi=700)  
+ggarrange(imgSetups, plot, heights = c(0.4, 1), labels = c("", "D"), ncol = 1, nrow = 2)+
+  theme(plot.margin = margin(0.1,0,0,0, "cm")) 
+ggsave(file="figure 4_Oviposition.pdf", width = 17.8, height = 13, units = "cm", dpi=700)  
 
 # Effect size
 EffectSize <- Merged %>%
@@ -416,3 +439,4 @@ anova(lmer2,type=1) #Rep assumed to have 0 variance component, but should be neg
 # Linear model: The linear model testing eggs laid direct On maize plants and eggs laid direct on desmodium plants, shows a significant difference for both in control vs. treatment and the comparison between the indirect vs. direct treatment. No significant differences occur for the start date, greenhouse, group, the comparison between the two desmodium species and the last treatment variable (which displays differences between the indirect, direct treatment AND the two desmodium species). 
 # ANOVA: Testing directly an ANOVA leads as in the linear model to a significant difference for the control vs. treatments and the comparison between the indirect and direct treatment. In both cases, a significant difference is identified between the control and the treatments and the indirect and the direct treatment. Additionally, testing on the maize side lead to a p-value <0.5 for the group, which was decisive for the position of the different treatments, while the anova test of the Desmodium side led to an significant effect for the start date, as the trials were carried in five cycles with five different start times.
 ## Mixed model: In the mixed models of both sides, again a significant differences for the terms control vs. treatment and Indirect vs. direct can be seen.
+
